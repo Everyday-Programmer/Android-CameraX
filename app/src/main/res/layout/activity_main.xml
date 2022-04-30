@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/camPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/flashToggle"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@drawable/button_bg"
+        android:scaleType="centerCrop"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10sp"
+        android:src="@drawable/ic_baseline_flash_on_24" />
+
+    <ImageButton
+        android:id="@+id/capture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50sp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_camera_24" />
+
+</RelativeLayout>
